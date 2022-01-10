@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--BS4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" >
+    <!--CSS-->
+    <link rel="stylesheet" href="style/index.css">
+    
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="container w-80 py-5 ">
+                <h2>Bài Tập 1</h2>
+                <h5>Tính Tiền Lương Nhân Viên</h5>
+                <form>
+                    <div class=" py-2">
+                        <span >Tiền Lương Mỗi Ngày:</span>
+                        <input  class="w-100 mt-2"  id="wage" type="text" placeholder="Tiền Lương Mỗi Ngày" />
+                      </div>
+                      <div class=" py-2">
+                        <span>Số Ngày Làm :</span>
+                        <input class="w-100 mt-2"   id="working_day" type="number" placeholder="Sô Ngày Làm" />
+                      </div>
+                      <div class="py-2">
+                          <button onclick="tongTienLuong()" class="btn btn-success" type="button" >Kết Quả</button>
+                          <p class="py-2" id="txtMoney"></p>
+                      </div>
+                </form>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container w-80 py-5">
+                <h2>Bài Tập 3</h2>
+                <h5>Quy Đổi Tiền USD</h5>
+                <form >   
+                    <div class="py-2">
+                        <span>Số USD Muốn Đổi</span>
+                        <input class="w-100 mt-2"  id="moneyUSD" type="number" placeholder="Số USD Muốn Đổi">
+                    </div>
+                    <div class="py-2">
+                        <button onclick="soTienViet()" type="button" class="btn btn-success">Kết Quả</button>
+                        <p class="py-2" id="txt-moneyUSD"></p>
+                    </div>
+                  </form>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container w-80 py-5">
+                <h2>Bài Tập 4</h2>
+                <h5>Tính  Chu Vi , Diện Tích Hình Chữ Nhật</h5>
+                <form>
+                    <div class="py-2">
+                        <span>Nhập Chiều Rộng :</span>
+                        <input class="w-100 mt-2"  id="Width" type="number" placeholder="Nhập Số Chiều Dài" >
+                    </div>
+                    <div class="py-2">
+                        <span>Nhập Chiều Cao :</span>
+                        <input class="w-100 mt-2" id="Height" type="number" placeholder="Nhập Số Chiều Cao" >
+                    </div>
+                    <div class="py-2">
+                        <button onclick="Acr_Per()" type="button" class="btn btn-success">Kết Quả</button>
+                        <p class="py-2" id="txtResult"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container w-80 py-5">
+                <h2>Bài Tập 5</h2>
+                <h5>Tính Tổng 2 Ký Số</h5>
+                <form >
+                    <div class="py-2">
+                        <span>Nhập Số Có Hai Chữ Số</span>
+                        <input id="num" class="w-100 mt-2" type="number" placeholder="Nhập Số Có Hai Chữ Số">
+                    </div>
+                    <div class="py-2">
+                        <button onclick="tolTa()" type="button" class="btn btn-success">Kết Quả</button>
+                        <p class="py-2" id="txtTen-Unit"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--BS4-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" ></script>
+    <!--Java-->
+    <script src="mainjs/index.js"></script>
+</body>
+</html>
