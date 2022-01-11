@@ -12,3 +12,6 @@
 h2,h5{
     text-align: center;
 }
+.row{
+    border-bottom: 1px solid black;
+}
